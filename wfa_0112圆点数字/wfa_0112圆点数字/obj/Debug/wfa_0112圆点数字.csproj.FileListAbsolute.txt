@@ -1,0 +1,9 @@
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\bin\Debug\wfa_0112圆点数字.exe.config
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\bin\Debug\wfa_0112圆点数字.exe
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\bin\Debug\wfa_0112圆点数字.pdb
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.csprojResolveAssemblyReference.cache
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.Form1.resources
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.Properties.Resources.resources
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.csproj.GenerateResource.Cache
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.exe
+G:\zsb\Code\vs2013\2017\wfa_0112圆点数字\wfa_0112圆点数字\obj\Debug\wfa_0112圆点数字.pdb
