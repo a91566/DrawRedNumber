@@ -19,7 +19,7 @@ namespace wfa_0112圆点数字
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.pictureBox1.Image = TextToBitmap("测试", this.Font, Rectangle.Empty, Brushes.Black, Color.Red);
+            this.pictureBox2.Image = TextToBitmap("9", this.Font, Rectangle.Empty, Brushes.DarkBlue, Color.Transparent);
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace wfa_0112圆点数字
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Graphics gra = this.pictureBox1.CreateGraphics();
+            Graphics gra = this.pictureBox2.CreateGraphics();
             gra.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             Pen pen = new Pen(Color.Pink);//画笔颜色 
             gra.DrawEllipse(pen, 0, 0, 100, 100);//画椭圆的方法，x坐标、y坐标、宽、高，如果是100，则半径为50
@@ -74,15 +74,17 @@ namespace wfa_0112圆点数字
             //Graphics gra = this.pictureBox1.CreateGraphics();
             Font myFont = new Font("宋体", 60, FontStyle.Bold);
             Brush bush = new SolidBrush(Color.Red);//填充的颜色
-            gra.DrawString("堵塞！", myFont, bush, 0, 0);
+            gra.DrawString("测试", myFont, bush, 0, 0);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Graphics gra = this.pictureBox1.CreateGraphics();
-            gra.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            Brush bush = new SolidBrush(Color.Red);//填充的颜色
-            gra.FillEllipse(bush, 0, 0, 10, 10);//画填充椭圆的方法，x坐标、y坐标、宽、高，如果是100，则半径为50
+            this.pictureBox2.Image = Properties.Resources.Image48;
+            using (Graphics g = Graphics.FromImage(this.pictureBox2.Image))
+            {
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                g.FillEllipse(new SolidBrush(Color.Red), 0, 0, 20, 20);
+            };
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -100,12 +102,27 @@ namespace wfa_0112圆点数字
 
             using (Graphics g = Graphics.FromImage(this.button5.Image))
             {
-                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 g.FillEllipse(new SolidBrush(Color.Red), 0, 0, 20, 20);
                 g.DrawString(this.textBox1.Text, new Font("宋体", 9), new SolidBrush(Color.White), iLeft, 4);
                 this.button5.Refresh();
             };
+
+            using (Graphics g = Graphics.FromImage(this.toolStripButton1.Image))
+            {
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                g.FillEllipse(new SolidBrush(Color.Red), 0, 0, 20, 20);
+                g.DrawString(this.textBox1.Text, new Font("宋体", 9), new SolidBrush(Color.White), iLeft, 4);
+                this.toolStrip1.Refresh();
+            };
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("Width:{0}; Height:{1}", toolStripButton1.Width, toolStripButton1.Height));
+        }
+
+     
     }
 }
 
